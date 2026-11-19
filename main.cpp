@@ -2,15 +2,29 @@
 using namespace std;
 
 int main() {
-    char x;
-    cin >> x;
+    int a, b, c;
+    cin >> a >> b >> c;
 
-    if (x == 'a' || x == 'e' || x == 'i' || x == 'o' || x == 'u' ||
-        x == 'A' || x == 'E' || x == 'I' || x == 'O' || x == 'U') {
-        cout << "vowel";
+    int mx, mn;
+
+    if (a >= b && a >= c) {
+        mx = a;
+    } else if (b >= a && b >= c) {
+        mx = b;
     } else {
-        cout << "consonant";
+        mx = c;
     }
+
+    if (a <= b && a <= c) {
+        mn = a;
+    } else if (b <= a && b <= c) {
+        mn = b;
+    } else {
+        mn = c;
+    }
+
+    cout << "Max element = " << mx << "\n";
+    cout << "Min element = " << mn;
 
     return 0;
 }
