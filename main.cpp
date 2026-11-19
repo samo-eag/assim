@@ -2,20 +2,17 @@
 using namespace std;
 
 int main() {
-    int d;
-    cin >> d;
+    int x;
+cin >> x;
+    int sum = 0;
 
-    if (d == 1) {
-        cout << "one";
-    } else if (d == 2) {
-        cout << "two";
-    } else if (d == 3) {
-        cout << "three";
-    } else if (d == 4) {
-        cout << "four";
-    } else if (d == 5) {
-        cout << "five";
+    for (i= 0; i < 5; i++) {
+        if (x % 2 != 0) {
+            sum += x;
+        }
     }
+
+    cout << sum;
 
     return 0;
 }
