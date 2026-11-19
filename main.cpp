@@ -1,16 +1,21 @@
 #include <iostream>
 using namespace std;
+
 int main() {
-    int x;
-    cin >> x;
-    if (x<0) {
-        cout<<"negative";
+    int d;
+    cin >> d;
+
+    if (d == 1) {
+        cout << "one";
+    } else if (d == 2) {
+        cout << "two";
+    } else if (d == 3) {
+        cout << "three";
+    } else if (d == 4) {
+        cout << "four";
+    } else if (d == 5) {
+        cout << "five";
     }
-    else if (x==0) {
-        cout<<"zero";
-    }
-    else {
-        cout<<"positive";
-    }
+
     return 0;
 }
