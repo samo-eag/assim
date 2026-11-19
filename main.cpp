@@ -2,10 +2,15 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
+    char x;
+    cin >> x;
 
-    cout << (n % 2 == 0 ? "even" : "odd");
+    if (x == 'a' || x == 'e' || x == 'i' || x == 'o' || x == 'u' ||
+        x == 'A' || x == 'E' || x == 'I' || x == 'O' || x == 'U') {
+        cout << "vowel";
+    } else {
+        cout << "consonant";
+    }
 
     return 0;
 }

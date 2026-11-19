@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 4.3)
-project(as8)
+project(as9)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(as8 main.cpp)
+add_executable(as9 main.cpp)
