@@ -2,17 +2,18 @@
 using namespace std;
 
 int main() {
-    int x;
-cin >> x;
-    int sum = 0;
+    int year;
+    cin >> year;
 
-    for (i= 0; i < 5; i++) {
-        if (x % 2 != 0) {
-            sum += x;
-        }
+    if (year % 400 == 0) {
+        cout << "leap year";
+    } else if (year % 100 == 0) {
+        cout << "not leap year";
+    } else if (year % 4 == 0) {
+        cout << "leap year";
+    } else {
+        cout << "not leap year";
     }
-
-    cout << sum;
 
     return 0;
 }
