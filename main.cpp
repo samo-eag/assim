@@ -2,17 +2,21 @@
 using namespace std;
 
 int main() {
-    int year;
-    cin >> year;
+    int mark;
+    cin >> mark;
 
-    if (year % 400 == 0) {
-        cout << "leap year";
-    } else if (year % 100 == 0) {
-        cout << "not leap year";
-    } else if (year % 4 == 0) {
-        cout << "leap year";
+    if (mark < 25) {
+        cout << "F";
+    } else if (mark <= 45) {
+        cout << "E";
+    } else if (mark <= 50) {
+        cout << "D";
+    } else if (mark <= 60) {
+        cout << "C";
+    } else if (mark <= 80) {
+        cout << "B";
     } else {
-        cout << "not leap year";
+        cout << "A";
     }
 
     return 0;
